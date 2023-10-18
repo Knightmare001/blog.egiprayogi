@@ -1,1 +1,1 @@
-# blog.egiprayogi
+# newbie blog

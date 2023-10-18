@@ -1,0 +1,80 @@
+.dark-mode {
+  --bgColor: #23272e;
+  --textColor: #000;
+}
+
+.light-mode {
+  --bgColor: #dddddd;
+  --textColor: #000000;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+.logo {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  column-gap: 30px;
+  position: absolute;
+}
+
+.containerContent {
+  border-radius: 5px;
+  width: 80%;
+  height: 1500px;
+  background-color: #fff;
+}
+
+.containerProfile {
+  position: sticky;
+  top: 0; /* Atur jarak dari atas halaman di mana elemen akan menempel */
+  z-index: 100;
+  border-radius: 5px;
+  height: 100%;
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerProfile span {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #000;
+}
+
+@media (max-width: 1500px) {
+  .main {
+    flex-wrap: wrap;
+    padding: 30px;
+    row-gap: 30px;
+  }
+
+  .containerContent {
+    width: 100%;
+    order: 2;
+  }
+
+  .containerProfile {
+    width: 100%;
+    position: static;
+  }
+}
